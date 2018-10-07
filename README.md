@@ -1,4 +1,4 @@
-# moodify
+#Dumb boilerplate
 
 ## Project setup
 ```

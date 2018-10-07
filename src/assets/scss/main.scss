@@ -1,0 +1,20 @@
+@import 'variables.scss';
+
+/* import ui overrides*/
+@import 'ui/_variables.scss';
+@import 'ui/_navbar.scss';
+
+/* import pages */
+@import 'pages/index.scss';
+// Import only what you need from Bulma
+@import "./../../../node_modules/bulma/bulma.sass";
+
+
+/* content */
+.title, .subtitle {
+    font-family: 'Rubik', cursive;
+}
+
+.is-white {
+    color: white;
+}

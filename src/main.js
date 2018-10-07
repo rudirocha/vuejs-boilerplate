@@ -2,6 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import VueI18n from 'vue-i18n'
+import './assets/scss/main.scss'
+import vueBulmaComponents from 'vue-bulma-components'
+
+Vue.use(vueBulmaComponents)
+Vue.use(VueI18n)
 
 Vue.config.productionTip = false
 
