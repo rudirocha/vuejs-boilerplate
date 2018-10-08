@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { loadLanguageAsync } from './providers/i18n'
 import Home from './views/Home.vue'
 
 Vue.use(Router)
@@ -22,6 +23,12 @@ let router = new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  const lang = typeof to.params.lang !== 'undefined' ? to.params.lang : 'en'
+  
+  loadLanguageAsync(lang).then(() => next())
 })
 
 export default router

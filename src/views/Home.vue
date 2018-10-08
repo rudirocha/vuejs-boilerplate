@@ -6,7 +6,7 @@
        <b-container>
          <b-title class="is-white">A dumb boilerplate for Vuejs websites</b-title>
          <b-title class="is-white">
-           Vuejs + Bulma components + Sass
+           Vuejs + Bulma components + Sass <p>{{ $t("message.hello") }}</p>
          </b-title>
        </b-container>
       </b-hero-body>
