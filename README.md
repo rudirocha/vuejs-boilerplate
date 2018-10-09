@@ -1,4 +1,14 @@
-#Dumb boilerplate
+# Dumb boilerplate
+
+## Project description
+This is a project VueJS 2 based to just start coding to build a web app. 
+It's simply a setup to start adding code.
+
+### whats inside
+VueJS (vueJS + vue-router + vuex)
+SASS loader
+Bulma (vue-bulma components)
+vue-i18n
 
 ## Project setup
 ```
