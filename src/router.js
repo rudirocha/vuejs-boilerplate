@@ -27,7 +27,7 @@ let router = new Router({
 
 router.beforeEach((to, from, next) => {
   const lang = typeof to.params.lang !== 'undefined' ? to.params.lang : 'en'
-  
+
   loadLanguageAsync(lang).then(() => next())
 })
 
